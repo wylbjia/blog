@@ -3,11 +3,36 @@
 ### 文章分类列表
 
 #### 1. Linux
-
-#### 2. Docker
-
-#### 3. Shell
-
+#### 2. Shell
+#### 3. Zabbix
 #### 4. PostgreSQL
 4.1 [PostgreSQL9.6编译安装](postgresql)
-
+#### 5. RabbitMQ
+#### 6. PHP
+#### 7. Redis
+#### 8. Docker
+#### 9. Puppet
+#### 10. ZeroMQ
+#### 11. Nmap
+#### 12. LVS
+#### 13. MySQL
+#### 14. Nginx
+#### 15. Lisp
+#### 16. Kuberbetes
+#### 17. Keepalived
+#### 18. OpenVPN
+#### 19. GoAccess
+#### 20. FreeSwitch
+#### 21. FFmpeg
+#### 22. Emacs
+#### 23. ELKstack
+#### 24. Cisco
+#### 25. Huawei
+#### 26. Ceph
+#### 27. Apache Traffic Server
+#### 28. etcd
+#### 29. git
+#### 30. Mesos
+#### 31. Kamailio
+#### 32. Swift
+#### 33. Yaf

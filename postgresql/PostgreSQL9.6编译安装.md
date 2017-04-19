@@ -81,3 +81,6 @@ ExecReload=/usr/bin/pg_ctl -D /var/pgsql/data -s reload
 [Install]
 WantedBy=multi-user.target
 ```
+
+Author: typefo
+Email: typefo@qq.com

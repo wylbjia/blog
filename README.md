@@ -3,14 +3,14 @@
 ### 文章分类列表
 
 #### 0. C
-#### 1. Linux
-#### 2. Shell
-#### 3. Zabbix
-#### 4. PostgreSQL
-4.1 [PostgreSQL9.6编译安装](postgresql)
-#### 5. RabbitMQ
-#### 6. PHP
-#### 7. Redis
+#### 1. PHP
+#### 2. Linux
+#### 3. Shell
+#### 4. Zabbix
+#### 5. PostgreSQL
+5.1 [PostgreSQL9.6编译安装](postgresql)
+#### 6. Redis
+#### 7. RabbitMQ
 #### 8. Docker
 #### 9. Puppet
 #### 10. ZeroMQ

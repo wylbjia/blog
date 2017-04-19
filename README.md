@@ -9,5 +9,5 @@
 #### 3. Shell
 
 #### 4. PostgreSQL
-![PostgreSQL9.6编译安装][postgresql]
+[PostgreSQL9.6编译安装](postgresql)
 

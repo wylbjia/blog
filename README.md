@@ -8,7 +8,7 @@
 #### 3. Shell
 #### 4. Zabbix
 #### 5. PostgreSQL
-5.1 [PostgreSQL9.6编译安装](postgresql)
+5.1 [PostgreSQL9.6编译安装](postgresql/PostgreSQL9.6编译安装.md)
 #### 6. Redis
 #### 7. RabbitMQ
 #### 8. Docker

@@ -26,6 +26,8 @@
 13.1 [MySQL 5.5 安装与配置](mysql/mysql-install-and-confiuration.md)
 
 13.2 [MySQL 数据库备份与恢复](mysql/mysql-backup-and-recovery.md)
+
+13.3 [MySQL 常见问题](mysql/mysql-common-problem.md)
 #### 14. Nginx
 #### 15. Lisp
 #### 16. Kuberbetes

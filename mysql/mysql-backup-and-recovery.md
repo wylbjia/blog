@@ -7,7 +7,8 @@
 **导出一个数据库**
 
 ```
-$ mysqldump -h 127.0.0.1 -u root -p --master-data=2 --single-transaction --add-drop-table --create-options --extended-insert
+$ mysqldump -h 127.0.0.1 -u root -p --master-data=2 --single-transaction --add-drop-table --create-options
+            --extended-insert
             --default-character-set=utf8
             --quick
             --databases
@@ -87,7 +88,7 @@ $ mysql -u root -p < backup.sql
    $ mysqlbinlog --start-position=4 /var/lib/mysql/mysql-bin.000002 | mysql -u root -p
 ```
 
-#### mysqldump 参数详解
+#### mysqldump 参数选项详解
    
 ```
 -A, --all-databases

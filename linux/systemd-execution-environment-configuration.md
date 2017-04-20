@@ -6,6 +6,13 @@
 
 #### systemd 通用选项列表
 
+选项名称 | 详细说明
+--------|--------
+WorkingDirectory|进程的工作目录
+RootDirectory|进程的根目录，类似使用 chroot 设置根目录
+User|指定运行用户，进程将以此用户身份运行
+Group|指定运行用户组，进程将以此用户组身份运行
+
 - `WorkingDirectory`进程的工作目录
 - `RootDirectory` 进程的根目录，类似使用 chroot 设置根目录
 - `RootImage`

@@ -25,7 +25,7 @@
 #### 13. MySQL
 13.1 [MySQL 5.5 安装与配置](mysql/mysql-install-and-confiuration.md)
 
-13.2 [MySQL 备份与恢复](mysql/mysql-backup-and-recovery.md)
+13.2 [MySQL 数据库备份与恢复](mysql/mysql-backup-and-recovery.md)
 #### 14. Nginx
 #### 15. Lisp
 #### 16. Kuberbetes

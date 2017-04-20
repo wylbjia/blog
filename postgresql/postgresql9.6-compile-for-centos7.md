@@ -5,7 +5,7 @@
 #### 安装 PostgreSQL 依赖开发包
 
 ```
-$ yum install -y gcc gcc-c++ make readline-devel zlib-devel openssl-devel perl-devel libxml2-devel
+$ yum install -y gcc gcc-c++ make readline-devel zlib-devel openssl-devel perl-devel libxml2-devel systemd-devel
 ```
 
 #### 编译 PostgreSQL 源码

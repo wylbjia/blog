@@ -5,11 +5,11 @@
 #### 0. C
 #### 1. PHP
 #### 2. Linux
-2.1 [systemd服务单元执行环境配置](linux/systemd-execution-environment-configuration.md)
+2.1 [systemd  服务单元执行环境配置](linux/systemd-execution-environment-configuration.md)
 #### 3. Shell
 #### 4. Zabbix
 #### 5. PostgreSQL
-5.1 [PostgreSQL9.6编译安装CentOS7](postgresql/postgresql9.6-compile-for-centos7.md)
+5.1 [PostgreSQL9. 编译安装 CentOS7](postgresql/postgresql9.6-compile-for-centos7.md)
 #### 6. Redis
 #### 7. RabbitMQ
 #### 8. Docker

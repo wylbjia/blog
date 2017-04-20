@@ -13,7 +13,7 @@ $ yum install -y gcc gcc-c++ make readline-devel zlib-devel openssl-devel perl-d
 ```
 $ tar -xzvf postgresql-9.6.2.tar.gz
 $ cd postgresql-9.6.2
-$ ./configure --prefix=/usr/local/postgresql-9.6 --datadir=/var/pgsql/data --with-systemd
+$ ./configure --prefix=/usr/local/postgresql-9.6 --with-systemd
 $ make
 $ make install
 ```

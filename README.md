@@ -9,7 +9,7 @@
 #### 3. Shell
 #### 4. Zabbix
 #### 5. PostgreSQL
-5.1 [PostgreSQL9.6编译安装](postgresql/postgresql9.6-compile-for-centos7.md)
+5.1 [PostgreSQL9.6编译安装CentOS7](postgresql/postgresql9.6-compile-for-centos7.md)
 #### 6. Redis
 #### 7. RabbitMQ
 #### 8. Docker

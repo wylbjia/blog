@@ -28,6 +28,9 @@
 13.2 [MySQL 数据库备份与恢复](mysql/mysql-backup-and-recovery.md)
 
 13.3 [MySQL 常见问题](mysql/mysql-common-problem.md)
+
+13.4 [MySQL 常用命令](mysql/mysql-common-command.md)
+
 #### 14. Nginx
 #### 15. Lisp
 #### 16. Kuberbetes

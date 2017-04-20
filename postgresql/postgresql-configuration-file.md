@@ -1,6 +1,6 @@
 ### PostgreSQL 的 postgresql.conf 配置文件详解
 
-postgresql.conf 是 PostgreSQL 的主配置文件。包含了 PostgreSQL 服务运行所必需的所有基础配置选项。并且有一些参数选项，需要根据服务器的硬件配置来进行设置。本文档以官方 PostgreSQL 9.6 版本配置文件为例。
+postgresql.conf 是 PostgreSQL 的主配置文件。包含了 PostgreSQL 服务运行所必需的所有基础配置选项。并且有一些参数选项，需要根据服务器的硬件配置来进行设置。本文档以官方 PostgreSQL 9.6 版本的配置文件为例。
 
 #### 配置文件中的参数值单位说明
 
@@ -9,8 +9,6 @@ postgresql.conf 是 PostgreSQL 的主配置文件。包含了 PostgreSQL 服务�
 时间单位: `ms` = 毫秒， `s` = 秒， `min` = 分钟， `h` = 小时， `d` = 天
 
 #### PostgreSQL 配置文件选项列表
-
-FILE LOCATIONS
 
 ```
 data_directory = 'ConfigDir'
@@ -30,7 +28,7 @@ external_pid_file = ''
 ```
 listen_addresses = 'localhost'
 ```
-PostgreSQL 服务器的监听 IP 地址，如果为 `*` 表示坚监听在本机的任何 IP 地址
+PostgreSQL 服务器的监听 IP 地址，如果为 `*` 表示监听在本机的任何 IP 地址
 
 ```
 port = 5432

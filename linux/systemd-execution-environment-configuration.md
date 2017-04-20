@@ -92,3 +92,7 @@
 - `RuntimeDirectoryMode`
 - `MemoryDenyWriteExecute`
 - `RestrictRealtime`
+
+------------------------------
+Author: typefo
+Email: typefo@qq.com

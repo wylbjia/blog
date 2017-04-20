@@ -71,16 +71,45 @@ After=network.target
 Type=forking
 User=postgres
 Group=postgres
+LimitNPROC=65535
+LimitNOFILE=102400
 OOMScoreAdjust=-1000
 TimeoutSec=300
 
-ExecStart=/usr/bin/pg_ctl -D /var/pgsql/data -s -w -t 300 start
-ExecStop=/usr/bin/pg_ctl -D /var/pgsql/data -s -m fast stop
-ExecReload=/usr/bin/pg_ctl -D /var/pgsql/data -s reload
+ExecStart=/usr/local/postgresql-9.6/bin/pg_ctl -D /var/pgsql/data -s -w -t 300 start
+ExecStop=/usr/local/postgresql-9.6/bin/pg_ctl -D /var/pgsql/data -s -m fast stop
+ExecReload=/usr/local/postgresql-9.6/bin/pg_ctl -D /var/pgsql/data -s reload
 
 [Install]
 WantedBy=multi-user.target
 ```
 
+#### 内核参数优化
+
+sysctl.conf
+
+```
+fs.nr_open = 2048000
+fs.file-max = 1024000
+fs.aio-max-nr = 1048576
+net.ipv4.tcp_fin_timeout = 5
+net.ipv4.tcp_synack_retries = 2
+net.ipv4.tcp_syncookies = 1
+net.ipv4.tcp_tw_recycle = 1
+net.ipv4.tcp_tw_reuse = 1
+```
+
+limits.conf
+
+```
+* soft    nofile  1024000
+* hard    nofile  1024000
+* soft    nproc   unlimited
+* hard    nproc   unlimited
+* soft    core    unlimited
+* hard    core    unlimited
+* soft    memlock unlimited
+* hard    memlock unlimited
+```
 Author: typefo  
 Email: typefo@qq.com

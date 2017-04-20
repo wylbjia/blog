@@ -23,6 +23,7 @@
 #### 11. Nmap
 #### 12. LVS
 #### 13. MySQL
+13.1 [MySQL 5.5 安装与配置](mysql/mysql-install-and-confiuration.md)
 #### 14. Nginx
 #### 15. Lisp
 #### 16. Kuberbetes

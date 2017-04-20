@@ -64,7 +64,7 @@ mysql> show slave status\G
    
 输出结果中 Slave_IO_Running: Yes 属正常，Slave_SQL_Running: No 表示不同步
    
-**忽略错误后，继续同步**
+**强制忽略错误继续同步**
    
 该方法适用于主从库数据相差不大，或者要求数据可以不完全统一的情况，数据要求不严格的情况
 

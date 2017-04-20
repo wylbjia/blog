@@ -46,4 +46,4 @@
 
 --------------------------------------
 
-Author: typefo <typefo@qq.com> 本文档使用 CC 署名 3.0 协议 ![by](https://creativecommons.org/icons/by/standard.gif)
+Author: typefo <typefo@qq.com> 本文档使用 CC-BY 4.0 协议 ![by](by.png)

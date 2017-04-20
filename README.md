@@ -43,3 +43,7 @@
 #### 31. Kamailio
 #### 32. Swift
 #### 33. Yaf
+
+--------------------------------------
+
+Author: typefo <typefo@qq.com> 本文档使用 CC 署名 3.0 协议 ![by](https://creativecommons.org/icons/by/standard.gif)

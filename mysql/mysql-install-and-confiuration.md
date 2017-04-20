@@ -23,6 +23,7 @@ $ service mysqld start
 ```
 $ yum install -y gcc gcc-c++ make bison bison-devel ncurses ncurses-devel zlib-devel
 $ yum install -y cmake openssl openssl-devel jemalloc jemalloc-devel libevent libevent-devel
+```
 
 ### 创建 MariaDB 运行用户
 
@@ -96,5 +97,3 @@ MySQL> flush privileges;
 ----------------------------------------------------------------------
 
 Author: typefo <typefo@qq.com> 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
-
-

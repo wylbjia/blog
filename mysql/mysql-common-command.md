@@ -311,7 +311,7 @@ mysql> show master logs
 mysql> select * from mysql.event;
 ```
 
------------------------------------------------------------
+-------------------------------------------------------------------------------
 
-Author: typefo <typefo@qq.com> 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
+By typefo typefo@qq.com 2017-04-20 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
 

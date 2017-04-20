@@ -58,4 +58,4 @@ $ goaccess -a -d -f /var/log/nginx/access.log -o access.html
 
 ----------------------------------------------------------------------------
 
-Author: typefo <typefo@qq.com> 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
+By typefo typefo@qq.com 2017-04-20 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)

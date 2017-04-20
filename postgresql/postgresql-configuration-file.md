@@ -955,3 +955,5 @@ include = 'special.conf'
 ---------------------------------
 
 Author: typefo <typefo@qq.com>
+
+Author: typefo <typefo@qq.com> 本文档使用 CC-BY 4.0 协议 ![by](../by.png)

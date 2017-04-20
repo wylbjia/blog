@@ -46,4 +46,4 @@
 
 --------------------------------------
 
-Author: typefo <typefo@qq.com> 本文档使用 CC-BY 4.0 协议 ![by](https://i.creativecommons.org/l/by/4.0/80x15.png)
+Author: typefo <typefo@qq.com> 本文档使用 CC-BY 4.0 协议 ![by](by.png)

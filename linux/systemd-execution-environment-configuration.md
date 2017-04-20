@@ -94,5 +94,4 @@
 - `RestrictRealtime`
 
 ------------------------------
-Author: typefo
-Email: typefo@qq.com
+Author: typefo <typefo@qq.com>

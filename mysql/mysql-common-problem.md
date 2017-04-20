@@ -56,13 +56,11 @@ mysql> show master status;
 +-------------------+----------+--------------+-------------------------------+
 ```
 
-在 Slave 服务器上查看 slave 状态
+在 Slave 服务器上查看 slave 状态。如果显示 Slave_IO_Running: Yes 属正常，Slave_SQL_Running: No 表示不同步
    
 ```
 mysql> show slave status\G
 ```
-   
-输出结果中 Slave_IO_Running: Yes 属正常，Slave_SQL_Running: No 表示不同步
    
 **强制忽略错误继续同步**
    

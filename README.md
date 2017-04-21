@@ -62,4 +62,4 @@
 
 -----------------------------------------------------------------------
 
-Author: typefo <typefo@qq.com> 本文档使用 CC-BY 4.0 协议 ![by](img/by.png)
+by typefo <typefo@qq.com> 本文档使用 CC-BY 4.0 协议 ![by](img/by.png)

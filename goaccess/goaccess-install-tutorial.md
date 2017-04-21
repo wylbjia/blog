@@ -10,7 +10,9 @@ GoAccess 是一个用来分析 Web 服务器日志的工具，可以对 Nginx �
 $ yum install -y goaccess
 ```
 
-[yahoo]: http://yahoo.com "yahoo"
+[yahoo]: http://yahoo.com
+
+> fwjeofjewof
 
 ### 用 GoAccess 源码编译安装
 

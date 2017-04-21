@@ -10,11 +10,11 @@ GoAccess 是一个用来分析 Web 服务器日志的工具，可以对 Nginx �
 $ yum install -y goaccess
 ```
 
-[cli]:../img/cli.jpg "this is image"
+[yahoo]: http://yahoo.com "yahoo"
 
 ### 用 GoAccess 源码编译安装
 
-编译安装之前需要安装 geoip 开发包，下载地址 <https://github.com/maxmind/geoip-api-c> 如果不需要 geoip 功能，去掉 `--enable-geoip=legacy` 参数即可。
+编译安装之前需要安装 geoip 开发包，下载地址 https://github.com/maxmind/geoip-api-c 如果不需要 geoip 功能，去掉 `--enable-geoip=legacy` 参数即可。
 
 ```
 $ wget http://tar.goaccess.io/goaccess-1.2.tar.gz

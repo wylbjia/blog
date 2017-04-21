@@ -1,10 +1,10 @@
-### systemd 服务执行环境配置选项
+# systemd 服务执行环境配置选项
 
 在 systemd 的服务单元文件中可以设置一些进程执行环境的相关参数，比如进程的运行用户和组、最大打开文件数、进程优先级、进程的环境变量等等。这些配置项可适用于 service、 socket、 mount、 swap 等类型的服务单元
 
 官方 systemd 原文链接: [systemd Execution environment configuration](https://www.freedesktop.org/software/systemd/man/systemd.exec.html) 
 
-#### systemd 通用选项列表
+### systemd 通用选项列表
 
 - `WorkingDirectory`进程的工作目录
 - `RootDirectory` 进程的根目录，类似使用 chroot 设置根目录
@@ -95,4 +95,4 @@
 
 -------------------------------------------------------------------------------
 
-By typefo typefo@qq.com 2017-04-20 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
+By typefo typefo@qq.com Update: 2017-04-20 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)

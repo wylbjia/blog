@@ -1,10 +1,10 @@
-### MySQL 数据库备份与恢复
+# MySQL 数据库备份与恢复
 
 有时候我们需要经常对 MySQL 的数据进行备份。以便在灾难发生时能恢复数据，保证线上业务的正常运行。通常我们使用 mysqldump 工具来进行 MySQL 的数据备份操作
 
-#### MySQL数据备份
+## MySQL数据备份
    
-**导出一个数据库**
+### 导出一个数据库
 
 ```
 $ mysqldump -h 127.0.0.1 -u root -p --master-data=2 --single-transaction --add-drop-table --create-options
@@ -15,46 +15,46 @@ $ mysqldump -h 127.0.0.1 -u root -p --master-data=2 --single-transaction --add-d
             dbname > database.sql
 ```
    
-**导出一个表**
+### 导出一个表
    
 ```
 $ mysqldump -u root -p --opt --flush-logs root tablename > table.sql
 ```
    
-**将备份文件压缩**
+### 将备份文件压缩
    
 ```
-$ mysqldump -h 127.0.0.1 -u root -p123456 --databases dbname | gzip > database.sql.gz
+$ mysqldump -h 127.0.0.1 -u root -p123456 --databases dbname | gzip > database.gz
 ```
 
-**对应的还原动作为**
+对应的还原动作为
 
 ```
 $ gunzip < database.sql.gz | mysql -u root -p123456 dbname
 ```
 
-#### MySQL数据恢复
+## MySQL数据恢复
 
-**导入数据库**
-
-```
-MySQL> use 
-MySQL> source /root/database.sql
-```
-   
-或者
+### 使用 mysql 导入数据
 
 ```
 $ mysql dbname < database.sql
 ```
+
+### 使用 source 导入数据
+
+```
+MySQL> use db;
+MySQL> source /root/database.sql;
+```
    
-**直接从一个数据库向另一个数据库转储**
+### 数据库与数据库转存
 
 ```
 $ mysqldump -u root -p --opt dbname | mysql --host 192.168.1.100 -C dbname
 ```
 
-#### 从 binlog 恢复数据
+### 从 binlog 恢复数据
 
 binlog 是 MySQL 的二进制日志文件，可以使用 mysqlbinlog 工具进行查看和恢复操作
 
@@ -62,21 +62,19 @@ binlog 是 MySQL 的二进制日志文件，可以使用 mysqlbinlog 工具进�
 $ mysqlbinlog [options] log-files
 ```
 
-**恢复从起始 pos 点之后的数据** (文件中 at 点)
+恢复从起始 pos 点之后的数据 (文件中 at 点)
 
 ```
 $ mysqlbinlog --start-position=4 /var/lib/mysql/mysql-bin.000001 > backup.sql
 ```
 
-**恢复从起始 pos 点到结束 pos 之间的数据** (文件中 at 点)
+恢复从起始 pos 点到结束 pos 之间的数据 (文件中 at 点)
    
 ```
-$ mysqlbinlog --start-position=4 stop-position=35678 /var/lib/mysql/mysql-bin.000001 > backup.sql
+$ mysqlbinlog --start-position=4 --stop-position=35678 /var/lib/mysql/mysql-bin.000001 > backup.sql
 ```
    
-**从数据库意外故障恢复**
-
-如果遇到服务器严重故障灾难，应该用最近一次使用 mysqldump 导出的完整备份恢复数据库
+从数据库意外故障恢复，如果遇到服务器严重故障灾难，应该用最近一次使用 mysqldump 导出的完整备份恢复数据库
 
 ```
 $ mysql -u root -p < backup.sql
@@ -85,10 +83,10 @@ $ mysql -u root -p < backup.sql
 然后使用从备份时间点之后的 binlog 日志文件把数据库恢复到最接近现在的可用状态，如有多个 binlog 文件，必须从最早生成的文件开始依次恢复
 
 ```
-   $ mysqlbinlog --start-position=4 /var/lib/mysql/mysql-bin.000002 | mysql -u root -p
+$ mysqlbinlog --start-position=4 /var/lib/mysql/mysql-bin.000002 | mysql -u root -p
 ```
 
-#### mysqldump 参数选项详解
+## mysqldump 参数选项详解
    
 ```
 -A, --all-databases
@@ -103,7 +101,7 @@ $ mysql -u root -p < backup.sql
 导出全部表空间
    
 ```
-   -y, --no-tablespaces
+-y, --no-tablespaces
 ```
 
 不导出任何表空间信息
@@ -539,5 +537,5 @@ TCP/IP和socket连接的缓存大小。
 
 ------------------------------------------------------------------------------
 
-By typefo typefo@qq.com 2017-04-20 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
+By typefo typefo@qq.com Update: 2017-04-20 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
 

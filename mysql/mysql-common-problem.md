@@ -1,8 +1,8 @@
-### MySQL常见问题
+# MySQL常见问题
 
 通常我们在使用 MySQL 的过程中，会遇到一些问题，本文档列出来一些常见的问题以及处理方法
 
-#### 忘记 root 账户密码
+## 忘记 root 账户密码
 
 如果忘记了 MySQL 的 root 密码，首先需要停止 mysql 服务
 
@@ -37,7 +37,7 @@ mysql> update mysql.user set authentication_string=password('new_pass') where us
 mysql> flush privileges;
 ```
 
-#### MySQL主从不同步问题
+## MySQL主从不同步问题
 
 在 Master 服务器上查看当前连接会话信息，查看进程 Sleep 是否太多
    
@@ -62,7 +62,9 @@ mysql> show master status;
 mysql> show slave status\G
 ```
    
-**强制忽略错误继续同步** (适用于主从库数据相差不大，或者要求数据可以不完全统一的情况，数据要求不严格的情况)
+**强制忽略错误继续同步**
+
+适用于主从库数据相差不大，或者要求数据可以不完全统一的情况，数据要求不严格的情况
 
 1. 在 slave 从服务器上停止 slave 同步
 
@@ -88,9 +90,10 @@ mysql> start slave;
 mysql> show slave status\G
 ```
 
-**重新做主从，完全同步** (适用于主从库数据相差较大，或者要求数据完全统一的情况)
+**重新做主从，完全同步**
 
-   
+此方法适用于主从库数据相差较大，或者要求数据完全统一的情况
+
 1. 在 master 上进行锁表，让其变成只读模式，防止数据写入
    
 ```
@@ -103,7 +106,7 @@ mysql> flush tables with read lock;
 $ mysqldump -u root -p > master-backuup.sql
 ```
    
-这里注意一点：数据库备份一定要定期进行，确保数据万无一失
+这里注意一点，数据库备份一定要定期进行，确保数据万无一失
    
 3. 查看 master 状态
    
@@ -159,7 +162,7 @@ mysql> show slave status\G
    
 确认 Slave_IO_Running: Yes 和 Slave_SQL_Running: Yes 都为 'Yes' 就表示主从同步正常
 
-#### MySQL从库同步慢问题
+## MySQL从库同步慢问题
 
 检查 slave 服务器 io thread 和 sql thread 状态
 
@@ -206,4 +209,4 @@ sync_binlog 默认为 0，类似操作系统的磁盘文件刷新同步机制，
 
 -------------------------------------------------------------------------------
 
-By typefo typefo@qq.com 2017-04-20 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
+By typefo typefo@qq.com Update: 2017-04-20 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)

@@ -92,7 +92,7 @@ $ systemctl enable postgresql.service
 
 #### 内核参数优化
 
-sysctl.conf
+/etc/sysctl.conf
 
 ```
 fs.nr_open = 2048000
@@ -105,7 +105,7 @@ net.ipv4.tcp_tw_recycle = 1
 net.ipv4.tcp_tw_reuse = 1
 ```
 
-limits.conf
+/etc/security/limits.conf
 
 ```
 * soft    nofile  1024000

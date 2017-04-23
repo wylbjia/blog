@@ -1,4 +1,4 @@
-## PostgreSQL 9.6 编译安装 CentOS 7
+## PostgreSQL 9.6 编译安装
 
 服务器环境为 CentOS 7.3 和 PostgreSQL 9.6.2。通常我们建议使用最新的 PostgreSQL 版本。首先在 PostgreSQL 官方网站下载最新版本的 PostgreSQL 源代码包。
 

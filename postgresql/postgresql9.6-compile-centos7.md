@@ -84,6 +84,12 @@ ExecReload=/usr/local/postgresql-9.6/bin/pg_ctl -D /var/pgsql/data -s reload
 WantedBy=multi-user.target
 ```
 
+将以上内容保存为 postgresql.service 文件，然后将其复制到 /etc/systemd/system 目录下，并开启 postgresql.service 服务
+
+```
+$ systemctl enable postgresql.service
+```
+
 #### 内核参数优化
 
 sysctl.conf

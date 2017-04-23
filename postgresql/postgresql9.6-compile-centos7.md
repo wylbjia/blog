@@ -60,7 +60,7 @@ effective_cache_size = 256MB
 $ /usr/local/postgresql-9.6/bin/pg_ctl -D /var/pgsql/pgdata -l /tmp/postgresql.log start
 ```
 
-#### systemd 服务脚本
+#### 使用 systemd 服务脚本
 
 ```
 [Unit]

@@ -18,9 +18,14 @@ data_directory = 'ConfigDir'
 hba_file = 'ConfigDir/pg_hba.conf'
 ```
 
+PostgreSQL 的 pg_hba.conf 配置文件路径
+
 ```
 ident_file = 'ConfigDir/pg_ident.conf'
 ```
+
+PostgreSQL 的 pg_ident.conf 配置文件路径
+
 ```
 external_pid_file = ''
 ```
@@ -48,13 +53,19 @@ superuser_reserved_connections = 3
 unix_socket_directories = '/tmp'
 ```
 
+PostgreSQL 的监听 unix 套接字目录
+
 ```
 unix_socket_group = ''
 ```
 
+PostgreSQL 的监听 unix 套接字文件权限组
+
 ```
 unix_socket_permissions = 0777
 ```
+
+PostgreSQL 的监听 unix 套接字文件权限掩码
 
 ```
 bonjour = off
@@ -67,6 +78,8 @@ bonjour_name
 ```
 authentication_timeout = 1min
 ```
+
+PostgreSQL 的用户登录验证超时时间
 
 ```
 ssl = off

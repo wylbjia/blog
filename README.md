@@ -28,11 +28,11 @@
 
 13.2 [MySQL 数据库备份与恢复](mysql/mysql-backup-recovery.md)
 
-13.3 [MySQL 高可用](mysql/mysql-high-availability.md)
+13.3 [MySQL 高可用架构](mysql/mysql-high-availability.md)
 
 13.4 [MySQL 主从复制](mysql/mysql-master-slave-replication.md)
 
-13.5 [MySQL 监控与分析](mysql/mysql-monitoring-analysis.md)
+13.5 [MySQL 性能监控与分析](mysql/mysql-monitoring-analysis.md)
 
 13.6 [MySQL 常见问题](mysql/mysql-common-problem.md)
 

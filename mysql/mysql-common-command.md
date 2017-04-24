@@ -79,9 +79,13 @@ MySQL> REVOKE privilege ON databasename.tablename FROM 'username'@'host';
 ```
 
 `privileges` 授权操作，比如 SELECT, INSERT, UPDATE, DELETE 等等, ALL 代表所有操作
+
 `databasename` 数据库名称，可用星号 * 表示所有数据库
+
 `tablename` 表名称，可用星号 * 表示所有表
+
 `username` 用户账户
+
 `host` 户主机地址，百分号 '%' 任何主机
 
 - 撤销用户 admin 对数据库 test 的 SELECT 权限
@@ -104,11 +108,15 @@ MySQL> DROP USER 'admin'@'192.168.1.130';
 
 - 刷新权限表，所有对用户的操作，最后都需要使用下面的命令刷新数据库权限表才能生效
 
+```
 MySQL> flush privileges;
+```
 
 - 查看用户权限
 
+```
 MySQL> show grants for root;
+```
 
 ## 数据库管理
 

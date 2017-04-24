@@ -94,7 +94,7 @@ MySQL> REVOKE privilege ON databasename.tablename FROM 'username'@'host';
 MySQL> REVOKE SELECT ON test.* FROM 'admin'@'192.168.1.130';
 ```
 
-**删除一个用户账户的基本命令格式**
+- 删除一个用户账户的基本命令格式
 
 ```
 MySQL> DROP USER 'username'@'host';

@@ -24,7 +24,7 @@ MySQL> CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 MySQL> CREATE USER 'admin'@'%' IDENTIFIED BY '123456';
 ```
    
-**用户账户授权**
+- 用户账户授权
 
 GRANT 用户授权命令的基本格式
 

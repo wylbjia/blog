@@ -61,6 +61,12 @@ $ git clone https://github.com/user/repository.git
 $ git pull
 ```
 
+将本地仓库变更内容同步到远程仓库
+
+```
+$ git push
+```
+
 如果加上 `--bare` 参数，就表示新建一个没有工作区的裸仓库，裸仓库只在服务器上供其他人进行代码协作之用
 
 ## 状态查看 status

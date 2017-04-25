@@ -67,8 +67,6 @@ $ git pull
 $ git push
 ```
 
-如果加上 `--bare` 参数，就表示新建一个没有工作区的裸仓库，裸仓库只在服务器上供其他人进行代码协作之用
-
 ## 状态查看 status
 
 查看当前仓库状态
@@ -163,7 +161,7 @@ $ git remote rename origin repo
 
 ## 日志记录 log
 
-查看当前仓库分支的变更记录
+查看当前仓库分支的 commit 历史记录
 
 ```
 $ git log

@@ -279,7 +279,7 @@ MySQL> show procedure status;
 MySQL> show full processlist;
 ```
 
-Id 表示当前会话 ID 标识，User 表示连接登录的用户， Host 远程主机地址， db 当前连接的数据库， Time 会话连接时长， Info 正在执行的命令， Progress 表示 SQL 耗时时间。当发现某一个会话耗时太长，可以使用 kill 命令 + 会话ID，来强制终止会话。
+`Id` 表示当前会话 ID 标识，`User` 表示连接登录的用户， `Host` 远程主机地址， `db` 当前连接的数据库， `Time` 会话连接时长， `Info` 正在执行的命令， `Progress` 表示 SQL 耗时时间。当发现某一个会话耗时太长，可以使用 kill 命令 + 会话ID，来强制终止会话。
 
 ```
 MySQL> kill 12
@@ -323,5 +323,5 @@ mysql> select * from mysql.event;
 
 -------------------------------------------------------------------------------
 
-By typefo typefo@qq.com Update: 2017-04-20 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
+By typefo typefo@qq.com Update: 2017-04-25 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
 

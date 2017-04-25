@@ -15,11 +15,11 @@ MySQL 的主从复制架构采用的是主 Master 下面对接一个或多个 Sl
 ```
 [mysqld]
 server-id = 1                           # 服务器 ID 标识，同一局域网内不可与其他服务器重复
-log-bin = mysql-bin                     # 二进制日志名称，开启 bin-log
+log-bin = mysql-bin                     # 开启 bin-log 日志，mysql-bin 为日志文件前缀
 binlog_format = mixed                   # binlog 日志格式，mixed 表示混合模式
 binlog-do-db = test                     # 指定哪些数据库需要写入 binlog 日志
 binlog_ignore_db = mysql                # 指定哪些数据库不写入 binlog 日志
-max_binlog_size = 500M                  # binlog 文件最大大小，超过大小会生成新文件
+max_binlog_size = 500M                  # binlog 文件最大大小，超过该大小会生成新的日志文件
 ```
   
 在 master 上重启 mysql 数据库
@@ -41,13 +41,13 @@ mysql> grant replication slave on *.* to 'repluser'@'192.168.1.102' identified b
 ```
 [mysqld]
 server-id = 2                           # 服务器 ID 标识，同一局域网内不可与其他服务器重复
-log-bin = mysql-bin                     # 开启 binlog 二进制日志，并指定日志文件名称
+log-bin = mysql-bin                     # 开启 bin-log 日志，mysql-bin 为日志文件前缀
 binlog_format = mixed                   # binlog 日志格式，mixed 表示混合模式
 relay-log = slave-relay-bin             # 设置 relay 中继日志文件名
 relay-log-index = slave-relay-bin.index # 设置 relay 中继日志索引文件名
 replicate_do_db = test                  # 指定哪些数据库需要同步复制
 replicate_ignore_db = mysql             # 指定哪些数据库不需要同步
-max_binlog_size = 500M                  # binlog 文件最大大小，超过大小会生成新文件
+max_binlog_size = 500M                  # binlog 文件最大大小，超过该大小会生成新的日志文件
 log-slave-updates = 1                   # 如果这台 slave 同时也是其他服务器的 master 则必须开启此选项
 ```
   

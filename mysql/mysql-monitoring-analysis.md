@@ -31,7 +31,7 @@ MySQL> set global slow_query_log = ON;
 MySQL> set global long_query_time = 1;
 ```
 
-也可在 my.cnf 配置文件中加入下列选项，可以永久生效
+使用上面的命令只对当前数据库生效。也可以在 my.cnf 配置文件中加入下列选项，使其永久生效
 
 ```
 [mysqld]
@@ -41,7 +41,7 @@ log_queries_not_using_indexes
 slow_query_log_file = /var/lib/mysql/slowquery.log
 ```
 
-log_slow_queries 表示慢查询日志件，long_query_time 表示执行时间超过 3 秒的 SQL 查询将被记录。log_queries_not_using_indexes 表示没有用到索引的 SQL 查询也将被记录。
+slow_query_log 表示开启慢查询日志，long_query_time 表示执行时间超过 3 秒的 SQL 查询将被记录。log_queries_not_using_indexes 表示没有用到索引的 SQL 查询也将被记录。slow_query_log_file 表示慢查询日志文件
 
 ## 使用 mysqldumpslow 分析慢查询日志
    

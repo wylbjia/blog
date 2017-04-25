@@ -44,7 +44,9 @@
 #### 17. Keepalived
 #### 18. OpenVPN
 #### 19. GoAccess
+
 19.1 [GoAccess 安装教程](goaccess/goaccess-install-tutorial.md)
+
 #### 20. FreeSwitch
 #### 21. FFmpeg
 #### 22. Emacs
@@ -55,6 +57,9 @@
 #### 27. Apache Traffic Server
 #### 28. etcd
 #### 29. git
+
+29.1 [git 常用命令](git/git-common-command.md)
+
 #### 30. Mesos
 #### 31. Kamailio
 #### 32. Swift

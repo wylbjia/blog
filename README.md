@@ -39,6 +39,9 @@
 13.7 [MySQL 常用命令](mysql/mysql-common-command.md)
 
 #### 14. Nginx
+
+14.1 [Nginx 编译与安装](nginx/nginx-compile-install.md)
+
 #### 15. Lisp
 #### 16. Kuberbetes
 #### 17. Keepalived

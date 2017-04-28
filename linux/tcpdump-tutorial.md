@@ -33,7 +33,7 @@ tcpdump 命令拥有相当多的参数选项，同时每个参数选项可以配
 -G
 -h   输出 tcpdump 的帮助信息
 -H   尝试检测 802.11s 协议草案中规定的头信息
--i   设置用于 tcpdump 监听捕获数据包的网络接口
+-i   设置用于 tcpdump 监听捕获数据包的网络接口，'any' 表示任何网络接口
 -I   让接口工作在监听模式下，仅支持 IEEE 802.11 WiFi 的接口， 
 -j
 -J
@@ -78,7 +78,80 @@ tcpdump 命令拥有相当多的参数选项，同时每个参数选项可以配
 --time-stamp-precision
 ```
 
-## tcpdump 匹配规则表达式
+## tcpdump 表达式
 
 
+## tcpdump 使用示例
 
+
+输出所有 tcp 80 端口的数据包
+
+```
+$ tcpdump 'tcp port 80'
+```
+
+输出网卡 eth0 上的 tcp 80 端口数据包
+
+```
+$ tcpdump -i eth0 'tcp port 80'
+```
+
+输出网卡 eth0 上的 tcp 80 端口数据包详细
+
+```
+$ tcpdump -i eth0 -v 'tcp port 80'
+```
+
+输出所有源地址为 192.168.1.100 的数据包详细信息
+
+```
+$ tcpdump -v 'src 192.168.1.100'
+```
+
+输出所有源地址为 192.168.1.100 ，并且目标地址为 112.24.56.88 的数据包详细信息
+
+```
+$ tcpdump -v 'src 192.168.1.100 and dst 112.24.56.88'
+```
+
+将 tcpdump 的原始数据包写入到一个文件中，以供 wireshark 分析
+
+```
+$ tcpdump -i eth0 'tcp port 80' -w /tmp/dump.pcap
+```
+
+从一个文件中读取原始数据包信息，然后解析输出到屏幕
+
+```
+$ tcpdump -vv -r /tmp/dump.pcap
+```
+
+输出源地址为 192.168.1.100 的 ICMP 协议数据包信息
+
+```
+$ tcpdump -i eth0 'src 192.168.1.100 and icmp'
+```
+
+只以数字形式显示 ip 地址和端口，而不解析成域名
+
+```
+$ tcpdump -i any -nn 'tcp port 80'
+```
+
+输出 http 协议的 GET 请求方法数据包
+
+```
+$ tcpdump -i any -vv 'tcp[20:4] = 0x47455420'
+```
+
+输出 http 协议的 POST 请求方法数据包
+
+```
+$ tcpdump -i any -vv 'tcp[20:4] = 0x504f5354'
+```
+
+输出所有 DNS 请求数据包
+
+```
+$ tcpdump -i any -vv 'udp dst port 53'
+```

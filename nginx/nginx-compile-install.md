@@ -6,6 +6,10 @@ Nginx 是一个性能出色的 http 服务器和反向代理服务器
 
 - CentOS 7.3
 - Nginx 1.12.0
+- 开启 http2 协议
+- 禁用 pop3、imap、smtp
+
+我们只将 Nginx 用于纯 Web 服务环境，所以去掉了 pop3、imap、smtp 等邮件模块
 
 ## 安装依赖包
 

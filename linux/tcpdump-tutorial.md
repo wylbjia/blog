@@ -152,3 +152,7 @@ $ tcpdump -i any -vv 'tcp[20:4] = 0x504f5354'
 ```
 $ tcpdump -i any -vv 'udp dst port 53'
 ```
+
+-------------------------------------------------------------------------------
+
+By typefo typefo@qq.com Update: 2017-04-28 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)

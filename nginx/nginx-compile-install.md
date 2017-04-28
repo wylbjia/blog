@@ -69,7 +69,7 @@ PIDFile=/run/nginx.pid
 
 ExecStartPre=/usr/bin/rm -f /run/nginx.pid
 ExecStartPre=/usr/local/nginx/sbin/nginx -t -c /usr/local/nginx/conf/nginx.conf
-ExecStart=/usr/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+ExecStart=/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
 ExecReload=/bin/kill -s HUP $MAINPID
 KillSignal=SIGQUIT
 TimeoutStopSec=5

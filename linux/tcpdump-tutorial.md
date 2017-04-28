@@ -78,9 +78,6 @@ tcpdump 命令拥有相当多的参数选项，同时每个参数选项可以配
 --time-stamp-precision
 ```
 
-## tcpdump 表达式
-
-
 ## tcpdump 使用示例
 
 

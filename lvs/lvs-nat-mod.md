@@ -69,3 +69,7 @@ $ ip link set eth0 up
 $ ip addr add 10.10.24.23/24 dev eth0
 $ ip route add default via 10.10.24.1
 ```
+
+----------------------------------------------------------------------------------------
+
+By typefo typefo@qq.com Update: 2017-04-29 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)

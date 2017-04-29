@@ -46,3 +46,7 @@ $ docker  run --net=ipvlan --name=ipv2 --ip 192.168.1.3 -it --rm alpine /bin/sh
 ```
 $ ping 192.168.1.2
 ```
+
+----------------------------------------------------------------------------------------
+
+By typefo typefo@qq.com Update: 2017-04-29 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)

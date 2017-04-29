@@ -31,7 +31,7 @@
 
 12.2 [LVS NAT 模式部署](lvs/lvs-nat-mod.md)
 
-12.3 [LVS TUN 模式部署](lsv/lvs-tun-mode.md)
+12.3 [LVS TUN 模式部署](lvs/lvs-tun-mode.md)
 
 12.4 [LVS 与 Keepalived 高可用](lvs/lvs-keepalived.md)
 

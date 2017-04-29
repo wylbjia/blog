@@ -12,6 +12,11 @@
 
 #### 3. Shell
 #### 4. Zabbix
+
+4.1 [Zabbix 安装配置](zabbix/zabbix-install-configuration.md)
+
+4.2 [Zabbix 配置文件详解](zabbix/zabbix-configuration-detailed.md)
+
 #### 5. PostgreSQL
 5.1 [PostgreSQL 9.6 编译安装](postgresql/postgresql9.6-compile-install.md)
 

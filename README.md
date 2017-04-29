@@ -16,7 +16,7 @@
 
 3.1 [sed 命令详解](shell/sed-command.md)
 
-3.2 [sort 命令详解](shell/sort.command.md)
+3.2 [sort 命令详解](shell/sort-command.md)
 
 #### 4. Zabbix
 

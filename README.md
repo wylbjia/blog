@@ -26,6 +26,17 @@
 #### 10. ZeroMQ
 #### 11. Nmap
 #### 12. LVS
+
+12.1 [LVS DR 模式部署](lvs/lvs-dr-mode.md)
+
+12.2 [LVS NAT 模式部署](lvs/lvs-nat-mod.md)
+
+12.3 [LVS TUN 模式部署](lsv/lvs-tun-mode.md)
+
+12.4 [LVS 与 Keepalived 高可用](lvs/lvs-keepalived.md)
+
+12.5 [LVS 相关性能优化](lvs/lvs-performance-optimization.md)
+
 #### 13. MySQL
 
 13.1 [MySQL 5.5 安装与配置](mysql/mysql-install-confiuration.md)

@@ -18,6 +18,8 @@
 
 3.2 [sort 命令详解](shell/sort-command.md)
 
+3.3 [awk 命令使用详解](shell/awk-command.md)
+
 #### 4. Zabbix
 
 4.1 [Zabbix 安装配置](zabbix/zabbix-install-configuration.md)

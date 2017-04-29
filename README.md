@@ -10,7 +10,14 @@
 
 2.2 [tcpdump 工具使用教程](linux/tcpdump-tutorial.md)
 
+2.3 [Linux 多网关配置](linux/linux-multiple-gateway.md)
+
 #### 3. Shell
+
+3.1 [sed 命令详解](shell/sed-command.md)
+
+3.2 [sort 命令详解](shell/sort.command.md)
+
 #### 4. Zabbix
 
 4.1 [Zabbix 安装配置](zabbix/zabbix-install-configuration.md)

@@ -92,6 +92,6 @@ $ systemctl enable nginx.service
 $ systemctl start nginx.service
 ```
 
------------------------------------
+------------------------------------------------------------------------------------------
 
 By typefo <typefo@qq.com> Update: 2017-04-27 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)

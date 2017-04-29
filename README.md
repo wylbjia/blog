@@ -21,6 +21,13 @@
 
 #### 6. Redis
 #### 7. RabbitMQ
+
+7.1 [RabbitMQ 安装配置](rabbitmq/rabbitmq-install.md)
+
+7.2 [RabbitMQ 集群环境配置](rabbitmq/rabbitmq-cluster-configuraion.md)
+
+7.3 [RabbitMQ 与 HAProxy 负载均衡](rabbitmq/rabbitmq-haproxy-load-balancing.md)
+
 #### 8. Docker
 
 8.1 [docker 使用 ipvlan 网络](docker/docker-ipvlan.md)

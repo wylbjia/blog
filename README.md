@@ -12,6 +12,10 @@
 
 2.3 [Linux 多网关配置](linux/linux-multiple-gateway.md)
 
+2.4 [ArchLinux 安装教程](linux/archlinux-install-guide.md)
+
+2.5 [Linux LVM 逻辑卷](linuxlinux-logical-volume-manager.md)
+
 #### 3. Shell
 
 3.1 [sed 命令详解](shell/sed-command.md)

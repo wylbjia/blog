@@ -14,7 +14,7 @@
 
 2.4 [ArchLinux 安装教程](linux/archlinux-install-guide.md)
 
-2.5 [Linux LVM 逻辑卷](linuxlinux-logical-volume-manager.md)
+2.5 [Linux LVM 逻辑卷](linux/linux-logical-volume-manager.md)
 
 #### 3. Shell
 

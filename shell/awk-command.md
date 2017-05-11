@@ -541,4 +541,4 @@ There is nothing either good or bad, but thinking makes it so
 
 ------------------------------------------------------------------------------------------
 
-By typefo <typefo@qq.com> Update: 2017-04-29 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)
+By typefo <typefo@qq.com> Update: 2017-04-30 本文档使用 CC-BY 4.0 协议 ![by](../img/by.png)

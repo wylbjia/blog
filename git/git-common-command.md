@@ -116,8 +116,10 @@ $ git branch -vv
 创建一个本地分支，同时关联到一个远程仓库上已经存在的分支
 
 ```
-$ git branch --track develop origin/develop
+$ git branch --track debug origin/develop
 ```
+
+> **debug** 为本地分支，**develop** 为远程分支
 
 删除一个本地分支
 
@@ -125,13 +127,33 @@ $ git branch --track develop origin/develop
 $ git branch -d develop
 ```
 
+查看分支关联信息
+
+```
+$ git branch -vv
+```
+
+将本地分支推送到远程分支，如果远程分支不存在则创建
+
+```
+$ git push origin debug:develop
+```
+
+> **debug** 为本地分支，**develop** 为远程分支
+
+将本地分支与远程分支相关联
+
+```
+$ git branch --set-upstream debug origin/develop
+```
+
+> **debug** 本地分支，**develop** 为远程分支
+
 删除一个远程仓库上的分支
 
 ```
 $ git push --delete origin develop
 ```
-
-其中 `origin` 表示一个远程仓库，`develop` 表示一个远程仓库上的分支
 
 ## 远程操作 remote
 
